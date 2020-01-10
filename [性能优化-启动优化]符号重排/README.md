@@ -9,9 +9,9 @@
 
 使用`Instruments - Virtual Memory Trace`来追踪应用的`page fault`情况
 
-![pic1](./instruments-system trace-File page)
+![pic1](https://raw.githubusercontent.com/778477/blog/master/%5B%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96%5D%E7%AC%A6%E5%8F%B7%E9%87%8D%E6%8E%92/before_order.png)
 
-由`trace`结果可知，应用在冷启阶段触发`File Backed Page in`次数达945次。
+由`trace`结果可知，应用在冷启阶段触发`File Backed Page in`次数达1780次。耗时450ms
 
 ### 2. 如何获取真正的order file
 
