@@ -26,3 +26,8 @@ clang-format -style=llvm -dump-config > .clang-format
 |JavaScript|LK_JavaScript|JavaScript|
 |Objective-C,Objective-C++|LK_ObjC|ObjC|
 |Protocol Buffers|LK_Proto|Proto|
+
+
+## 业界方案
+
+(git precommit hook + clang-format)https://github.com/square/spacecommander
