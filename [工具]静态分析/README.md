@@ -7,15 +7,13 @@
 #!/bin/bash
 #author=guomiaoyou
 
-install_clang_analyzer(){
-    curl https://clang-analyzer.llvm.org/downloads/checker-279.tar.bz2 > /var/tmp/checker-279.tar.bz2   
+function install_clang_analyzer() {
+    curl https://clang-analyzer.llvm.org/downloads/checker-279.tar.bz2 > ~/checker-279.tar.bz2   
 
-    pushd /var/tmp/
+    pushd ~
     tar -jxvf checker-279.tar.bz2
-    mkdir -p /usr/local/bin/
-    cp checker-279/bin/scan-build /usr/local/bin/
-    cp checker-279/libexec/* /usr/local/bin/
-    rm -rf  checker-279.tar.bz2 checker-279/
+    rm -rf  checker-279.tar.bz2 
+    echo "export PATH=$HOME/checker-279/bin:$PATH" >> .bash_profile && source .bash_profile
     popd
 }
 
